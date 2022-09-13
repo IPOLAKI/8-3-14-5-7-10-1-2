@@ -1,0 +1,15 @@
+def sort_smallest(list):
+  for i in range(len(list)):
+    smallest = list[0]
+    for i in range(len(list)):
+      if list[i] < smallest:
+         smallest = list[i]
+
+    new_list.append(smallest)
+    list.remove(smallest)
+
+#return result
+list = [8,3,14,5,7,10,1,2]
+new_list=[]
+sorted_list = sort_smallest(list)
+print(new_list)
